@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.contact-html {
+  background-color: #ff8c00;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.contact-html h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.contact-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #ff8c00;
+  border-bottom: 2px solid #ff8c00;
+  padding-bottom: 0.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+}
+
+.contact-details ul,
+.contact-details li {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.contact-details ul ul {
+  margin-left: 1rem;
+}
+
+.contact-details li strong {
+  color: #ff8c00;
+}
+
+.contact-form form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #e07a00;
+}
+</style>
+
+<head>
+  <title>Contact</title>
+</head>
+<body>
+  <header class="contact-html">
+    <h1>Contact</h1>
+  </header>
+  <main class="contact-page">
+    <section class="contact-info">
+      <h2>Contactez-nous</h2>
+      <p>
+        Nous sommes là pour répondre à toutes vos questions et vous fournir l'assistance nécessaire. <br>
+        Vous pouvez nous joindre par téléphone, email, ou en remplissant le formulaire ci-dessous.
+      </p>
+    </section>
+
+    <section class="contact-details">
+      <h2>Coordonnées principales :</h2>
+      <ul>
+        <li><strong>Adresse :</strong> La magie du cinéma, 123 Rue du Cinéma, Tunis</li>
+        <li><strong>Téléphone :</strong> 72102545</li>
+        <li><strong>Email :</strong> <a href="mailto:contact@magiecinema.com">contact@magiecinema.com</a></li>
+        <li><strong>Horaires d'ouverture :</strong></li>
+        <ul>
+          <li>Cinéma : Lundi au dimanche, 10h - 23h</li>
+          <li>Service client : Lundi au vendredi, 9h - 20h</li>
+        </ul>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Formulaire de contact :</h2>
+    
+      <form >
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+        <label for="phone">Téléphone (facultatif) :</label>
+        <input type="text" id="phone" name="phone" placeholder="Votre téléphone">
+
+        <label for="sujet">Sujet :</label>
+        <select id="sujet" name="sujet" required>
+          <option value="reservation">Réservation</option>
+          <option value="remboursement">Remboursement</option>
+          <option value="informations">Informations sur les films</option>
+        </select>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </section>
+  </main>
+    
+</html>
