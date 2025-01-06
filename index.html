@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-size: 2vw;
+}
+
+.banner .title {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+}
+
+.header{
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffd700;
+}
+.header-left{
+  width: 300px;
+  height: auto;
+}
+.header-right{
+  width: 300px;
+  height: auto;
+}
+.title{
+  font-size:36px;
+  color: #000;
+  text-align: center;
+  flex: 1;
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  padding:20px 10px;
+  margin: 0;
+  border-radius: 5px;
+  font-family:'Courier New', Courier, monospace;
+}
+.navigation li{
+  margin: 0 15px
+}
+.navigation a {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 10px;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.navigation a:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+
+.recherch {
+  margin: 20px 0;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+}
+
+.recherch input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+}
+
+.container h1 {
+  font-size: 42;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-align: center;
+ margin-bottom: 20px;
+}
+ 
+
+.jours {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  background-color: #090909; 
+  color: #ffcc00;
+  border-radius: 5px;
+  margin-left: 180px;
+}
+
+.jours span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.tableau {
+  display: flex;
+}
+
+.Heure {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000; 
+  color: #ffcc00;
+}
+
+.Heure div {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #444; 
+}
+
+.movies {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.films {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.films img {
+  width:100px;
+  height:150px;
+  object-fit: cover;
+  border-radius: 5px;
+ 
+}
+.reservation {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reservation h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.formulaire{
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formulaire label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulaire select,
+.formulaire input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reserve-button {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserve-button:hover {
+  background-color: #000;
+  }
+
+  </style>
+  
+<head>
+
+  <title>Programme de la Semaine</title>
+ 
+</head>
+<body>
+  <header class="header">
+      <img src="c:\Users\Zayneb Jerbi\Desktop\img\bbb.jfif" alt="image gauche" class="header-left">
+      <h1 class="text-centre text-primar">La Magie du Cinéma</h1>
+      <img src="c:\Users\Zayneb Jerbi\Desktop\img\images32.jfif "alt="image droit" class="header-right">
+  </header>
+    <nav class="navigation">
+      <ul>
+        <li><a href="films">Films</a></li>
+        <li><a href="offre.html">offres et abonnemment</a></li>
+        <li><a href="contaact.html">Contact</a></li>
+        <li><a href="a propos.html">À Propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="recherch">
+    <label for="recherch">Chercher votre film :</label>
+    <input type="text" id="search" placeholder="Rechercher...">
+  </div>
+
+  <section class="container">
+    <header>
+      <h1>Programme de la semaine</h1>
+    </header>
+
+    <div class="jours">
+      <span>Lundi</span>
+      <span>Mardi</span>
+      <span>Mercredi</span>
+      <span>Jeudi</span>
+      <span>Vendredi</span>
+      <span>Samedi</span>
+      <span>Dimanche</span>
+    </div>
+
+    
+    <div class="tableau">
+      <div class="Heure">
+        <div>11:00</div>
+        <div>14:00</div>
+        <div>16:00</div>
+        <div>18:00</div>
+        <div>20:00</div>
+      </div>
+
+     
+      <div class="movies">
+        <div class="films">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="1">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\ellissa.jfif" alt="2">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\smil.jfif" alt="3">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\wicked.jfif" alt="4">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="5">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\wicked.jfif" alt="6">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="7">
+        </div>
+        <div class="films">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\ellissa.jfif" alt="8">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="9">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\wicked.jfif" alt="10">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="11">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="12">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="13">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\wicked.jfif" alt="14">
+          
+
+        </div>
+        <div class="films">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\gggg.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\wicked.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\ellissa.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\wicked.jfif" alt="">
+        </div>
+        <div class="films">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\gggg.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\smil.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\smil.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\gggg.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\ellissa.jfif" alt="">
+        </div>
+        <div class="films">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\smil.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\gggg.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\ellissa.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\bolice.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\gggg.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\smil.jfif" alt="">
+          <img src="c:\Users\Zayneb Jerbi\Desktop\img\vvvv.jfif" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="reservation">
+  <h2>Réservez vos places !</h2>
+    <div class="formulaire">
+      <label for="film">Choix du film :</label>
+      <select id="film" name="film">
+        <option value="Bolice">bolice</option>
+        <option value="vanan">vanan</option>
+        <option value="wicked">wicked</option>
+        <option value="smile">smile</option>
+        <option value="khatem ellisa">khatem ellisa</option>
+        <option value="el firma">el firma</option>
+      </select>
+    </div>
+
+    <div class="formulaire">
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date">
+    </div>
+
+    <div class="formulaire">
+      <label for="time">Heure :</label>
+      <select id="time" name="time">
+        <option value="11:00">11:00</option>
+        <option value="14:00">14:00</option>
+        <option value="16:00">16:00</option>
+        <option value="18:00">18:00</option>
+        <option value="20:00">20:00</option>
+      </select>
+    </div>
+
+    <div class="formulaire">
+      <label for="nbrp">Nombre de places :</label>
+      <select id="nbrep" name="nbrp">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Reserve</button>
+   
+  </form>
+</section>
+</body>
+</html>
